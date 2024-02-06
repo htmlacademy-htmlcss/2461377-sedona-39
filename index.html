@@ -7,12 +7,13 @@
 </head>
 
 <body>
+
   <header class="page-header" data-test="header">
     <nav class="navigation">
-      <a class="main-logo"><img class="main-logo-image" src="" alt="логотип сайта Седона"></a>
+      <span class="main-logo"><img class="main-logo-image" src="" alt="Логотип сайта Седона"></span>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link">Главная</a>
+          <span class="navigation-link">Главная</span>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
@@ -27,25 +28,28 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Хочу сюда!</a>
+          <span class="likes-cost">12</span>
         </li>
       </ul>
+      <a class="navigation-link" href="#">Хочу сюда!</a>
     </nav>
   </header>
+
   <main class="main-index" data-test="main">
+
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <img class="logo" src="" alt="Приветственный логотип в Седону">
     </section>
+
     <section class="advantages" data-test="advantages">
-      <h2 class="advantages-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <h2 class="advantages-lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="advantages-description">Рассмотрим причины, по котороым Седона круче, чем Гранд-Каньен!</p>
       <ul class="advantages-list">
-        <li class="advantages-item">
+        <li class="advantages-item advantages-item-wide">
           <h3 class="advantages-item-title">Настоящий городок</h3>
           <p class="advantages-item-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <img src="домик с кустиками" alt="" class="advantages-img">
         </li>
         <li class="advantages-item">
           <h3 class="advantages-item-title">Небольшая площадь</h3>
@@ -60,11 +64,13 @@
           <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="advantages-item">
-          <h3 class="advantages-item-title">Там есть мост дьявола</h3>
+          <h3 class="advantages-item-title advantages-item-wide">Там есть мост дьявола</h3>
           <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <img src="" alt="" class="advantages-img">
         </li>
       </ul>
     </section>
+
     <section class="servises">
       <h2 class="servises-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
       <p class="servises-description">Опытный персонал и качественное обслуживание!</p>
@@ -83,6 +89,7 @@
         </li>
       </ul>
     </section>
+
     <section class="search" data-test="search">
       <h2 class="search-title">Заинтересовались?</h2>
       <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучше предложения гостиниц в
@@ -98,10 +105,12 @@
           <input class="newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email"
             id="newsletter-email">
         </p>
-        <button class="newsletter-button" type="submit">Подписаться!</button>
+        <button class="newsletter-button" type="button">Подписаться!</button>
       </form>
     </section>
+
   </main>
+
   <footer class="page-footer" data-test="footer">
     <ul class="footer-navigation-list">
       <li class="footer-navigation-item">
@@ -118,9 +127,10 @@
       </li>
     </ul>
     <a class="footer-telephone" href="tel:+78128121212">+7(812)812-12-12</a>
-    <a class="footer-link-htmlacademy" href="https://htmlacademy.ru/"><span class="visually-hidden">Ссылка на HTML
-        academy</span></a>
-
+    <a class="copyright" href="https://htmlacademy.ru/">
+      <img src="#" alt="" class="copyright-logo">
+      <span class="visually-hidden">Ссылка на HTML academy</span>
+      </a>
   </footer>
 
 </body>
