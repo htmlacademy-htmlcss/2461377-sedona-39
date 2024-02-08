@@ -28,11 +28,10 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Хочу сюда!</a>
+          <span class="likes-cost">12</span>
         </li>
       </ul>
+      <a class="navigation-link" href="#">Хочу сюда!</a>
     </nav>
   </header>
 
@@ -105,8 +104,14 @@
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <ul class="filter-cost-list">
             <li class="filter-cost-item">
-              <input class="filter-cost-input-left" type="text" placeholder="0">
-              <input class="filter-cost-input-right" type="text" placeholder="9000">
+              <label>
+                От
+                <input class="filter-cost-input-left" type="text" placeholder="0">
+              </label>
+              <label class="control=filter-cost">
+                До
+                <input class="filter-cost-input-right" type="text" placeholder="9000">
+              </label>
             </li>
             <li class="filter-cost-item">Полосочка</li>
           </ul>
@@ -206,22 +211,22 @@
       </ul>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-item-button" type="button">1</a>
+          <a class="pagination-item-button" type="button" href="#">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-item-button" type="button">2</a>
+          <a class="pagination-item-button" type="button" href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-item-button" type="button">3</a>
+          <a class="pagination-item-button" type="button" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-item-button" type="button">4</a>
+          <a class="pagination-item-button" type="button" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <span class="pagination-item-button" type="button">...</span>
+          <span class="pagination-item-button" type="button" href="#">...</span>
         </li>
         <li class="pagination-item">
-          <a class="pagination-item-button" type="button">10</a>
+          <a class="pagination-item-button" type="button" href="#">10</a>
         </li>
       </ul>
     </section>
