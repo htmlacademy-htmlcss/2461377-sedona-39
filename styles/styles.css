@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "PT Sans" ;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans", ;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format(woff2);
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: darkgray;
+  color: #000;
+}
+
+/*.page-header {
+
+}*/
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.main-index {
+ background-image: url("../images/background-hero-sq.jpg");
+ background-size: 100% auto;
+ background-repeat: no-repeat;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-desc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-item {
+  background-color: #83B3D3;
+}
+
+.advantages-item-wide {
+  background-color: #82B3D3;
+  ;
+}
+
+.as {
+  margin: 0;
+}
