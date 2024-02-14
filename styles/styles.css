@@ -46,10 +46,16 @@ body {
   text-transform: uppercase;
 }
 
-.main-index {
- background-image: url("../images/background-hero-sq.jpg");
- background-size: 100% auto;
+.hero {
+ background-image: url(../images/background-divider.svg), url("../images/background-hero-sq.jpg");
+ background-position: bottom;
+ background-color: rgba(130, 179, 211, 0.5);
+ background-size: cover;
  background-repeat: no-repeat;
+}
+
+.hero-logo {
+  padding: 50px;
 }
 
 .advantages {
@@ -123,7 +129,8 @@ body {
 
 .subscription {
   background-image: url(../images/background-subscribe-sq.jpg);
-  background-size: 100% auto;
+  background-color: rgba(130, 179, 211, 0.5);
+  background-size: cover;
   color: rgba(255, 255, 255, 1);
   font-size: 22px;
   line-height: 26px;
@@ -150,7 +157,7 @@ body {
 
 .catalog-hero {
   background-image: url(../images/background-filter.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-color: rgb(116, 116, 116);
   background-repeat: no-repeat;
   color: rgba(255, 255, 255, 1);
@@ -208,6 +215,7 @@ body {
 }
 
 .catalog-card-rating {
+  background-color: rgba(242, 242, 242, 1);
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
