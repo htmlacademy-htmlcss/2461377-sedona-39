@@ -102,12 +102,16 @@ body {
   margin-left: auto;
   flex-wrap: wrap;
   margin-right: 20px;
-}
+  }
 
 .navigation-link.navigation-user {
   display: block;
   min-width: 24px;
   min-height: 44px;
+}
+
+.navigation-item {
+  outline: 2px solid green;
 }
 
 .navigation-link {
@@ -123,7 +127,6 @@ body {
 
 .favorite-qty {
   background-color: #7DB54F;
-  ;
   color: #ffffff;
   font-size: 10px;
   line-height: 10px;
@@ -155,6 +158,7 @@ body {
 
 .advantages {
   text-align: center;
+  margin-bottom: 64px;
 }
 
 .advantages-title {
@@ -189,8 +193,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding: 50px;
 }
 
 .advantages-item-title {
@@ -213,8 +216,15 @@ body {
   width: 1200px;
   display: flex;
   flex-direction: row;
-
+  justify-content: space-between;
   padding: 0;
+}
+
+.item-wide-conteiner {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 .advantages-img {
@@ -223,11 +233,18 @@ body {
 
 .servises {
   text-align: center;
+  margin-bottom: 96px;
 }
 
 .servises-title {
   width: 505px;
   margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.servises-desc {
+  margin: 0;
+  margin-bottom: 64px;
 }
 
 .servises-list {
@@ -240,6 +257,7 @@ body {
 .servises-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
+  min-height: 385px;
 }
 
 .servises-item-title {
@@ -247,19 +265,33 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding-top: 185px;
 }
 
 .servises-item-light {
   background-color: inherit;
 }
 
+.servises-item-desc {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
 .search-request {
   text-align: center;
+  margin-bottom: 96px;
+}
+
+.search-title {
+  margin-bottom: 20px;
 }
 
 .search-desc {
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0 300px;
 }
 
 .search-link {
@@ -269,6 +301,7 @@ body {
   line-height: 36px;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 8px 50px;
 }
 
 .subscription {
@@ -281,6 +314,37 @@ body {
   text-align: center;
 }
 
+.subscription-title {
+  padding-top: 96px;
+  margin-bottom: 20px;
+}
+
+.subscription-desc {
+  margin: 0;
+  margin-bottom: 54px;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 104px;
+}
+.subscription-form-email {
+  margin: 0;
+}
+
+.subscription-input {
+  width: 452px;
+  min-height: 52px;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+}
+
 .subscription-button {
   background-color: rgba(130, 179, 211, 1);
   color: rgba(255, 255, 255, 1);
@@ -288,6 +352,11 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 232px;
+  height: 52px;
 }
 
 .subscription-input {
@@ -297,7 +366,21 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 70px 0 70px;
+  align-items: center;
+  margin: 40px 70px 30px 70px;
+}
+
+.footer-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.footer-navigation-item {
+  min-width: 47px;
+  min-height: 40px;
+  outline: 2px solid green;
 }
 
 .footer-telephone {
@@ -325,6 +408,9 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-bottom: 8px;
+  padding-top: 35px;
 }
 
 .breadcrumbs-list {
