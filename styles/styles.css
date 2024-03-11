@@ -162,7 +162,7 @@ body {
 }
 
 .advantages-title {
-  width: 620px;
+  min-width: 620px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -357,6 +357,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   border: none;
+  background-color: #f2f2f2;
 }
 
 .subscription-button {
@@ -444,6 +445,7 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 28px;
 }
 
@@ -473,7 +475,7 @@ body {
   border: none;
   outline: 1px solid green;
   margin-right: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 68px;
 }
 
 .last-filter {
@@ -576,6 +578,7 @@ body {
 .catalog-header {
   display: flex;
   align-items: center;
+  margin-bottom: 70px;
 }
 
 .catalog-select {
@@ -612,18 +615,53 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 80px;
 }
 
 .catalog-card-item {
   width: 340px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+}
+
+.catalog-card-img {
+  grid-column: 1 / -1;
+}
+
+.catalog-card-img img {
+  display: block;
 }
 
 .catalog-card-link-title {
+  grid-column: 1 / -1;
   color: rgba(0, 0, 0, 1);
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-decoration: none;
+}
+
+.catalog-card-title {
+  margin: 0;
+}
+
+.catalog-card-type {
+  margin: 0;
+}
+
+.catalog-card-cost{
+  margin: 0;
+  justify-self: end;
+}
+
+.catalog-card-link {
+  justify-self: center;
+  align-self: center;
+  padding: 8px 26px;
 }
 
 .catalog-card-button {
@@ -634,6 +672,15 @@ body {
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
+}
+
+.catalog-card-rating {
+  grid-column: 2 / 3;
+  margin: 0;
+  width: 140px;
+  text-align: center;
+  padding: 8px;
 }
 
 .active-favorit {
@@ -652,10 +699,22 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 156px;
 }
 
 .pagination-item-button {
   background-color: rgba(130, 179, 211, 1);
+  display: flex;
+  min-width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 .active-pagination {
