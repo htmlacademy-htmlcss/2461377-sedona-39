@@ -75,7 +75,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link breadcrumbs-link-active">Гостиницы</a>
               </li>
             </ol>
           </nav>
@@ -91,20 +91,22 @@
               <ul class="filter-checkbox-list">
                 <li class="filter-checkbox-item filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>
+                    <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
                     <span class="control-input-check"></span>
                     <span class="control-input-text">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-checkbox-item filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
+                    <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                    <span class="control-input-check"></span>
                     <span class="control-input-text">Парковка</span>
                   </label>
                 </li>
                 <li class="filter-checkbox-item filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wifi">
+                    <input class="control-input visually-hidden" type="checkbox" name="wifi">
+                    <span class="control-input-check"></span>
                     <span class="control-input-text">Wi-fi</span>
                   </label>
                 </li>
@@ -115,19 +117,23 @@
               <ul class="filter-radio-list">
                 <li class="filter-radio-item filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="hight-hotel" checked>
+                    <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hight-hotel"
+                      checked>
+                    <span class="control-input-check control-input-radio"></span>
                     <span class="control-input-text">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-radio-item filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="hotel">
+                    <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hotel">
+                    <span class="control-input-check control-input-radio"></span>
                     <span class="control-input-text">Мотель</span>
                   </label>
                 </li>
                 <li class="filter-radio-item filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing" value="apartament">
+                    <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="apartament">
+                    <span class="control-input-check control-input-radio"></span>
                     <span class="control-input-text">Апартаменты</span>
                   </label>
                 </li>
@@ -147,7 +153,6 @@
                   </label>
                 </li>
                 <li class="filter-cost-item">
-                  <span class="visually-hidden">Полосочка</span>
                   <div class="slider-wrapper">
                     <div class="slider-content"></div>
                     <div class="slider-content slider-active" style="left:0px; width: 207px;">
