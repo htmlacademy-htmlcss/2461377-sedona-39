@@ -63,14 +63,14 @@
       </section>
 
       <section class="advantages" data-test="advantages">
-        <h2 class="title advantages-title">Седона — небольшой городок в&nbspАризоне,<br>
+        <h2 class="title advantages-title">Седона — небольшой городок в &nbsp; Аризоне,<br>
           заслуживающий большего!</h2>
         <p class="advantages-desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньен!</p>
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-wide">
             <div class="item-wide-conteiner">
               <h3 class="advantages-item-title advantages-item-title-light">Настоящий <br> городок</h3>
-              <p class="advantages-item-desc">Седона - не аттракцион для <br> туристов, там течет своя <br> жизнь</p>
+              <p class="advantages-item-desc">Седона — не аттракцион для <br> туристов, там течет своя <br> жизнь</p>
             </div>
             <img class="advantages-img" src="images/photo-sq-1.jpg" width="800" height="385" alt="домик с кустиками">
           </li>
@@ -84,7 +84,7 @@
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Мало <br>туристов</h3>
-            <p class="advantages-item-desc">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="advantages-item-desc">Большинство едет в Гранд <br> Каньон и толпится там</p>
           </li>
           <li class="advantages-item advantages-item-wide">
             <img class="advantages-img" src="images/photo-sq-2.jpg" width="800" height="385" alt="Мост дьявола">
@@ -102,26 +102,30 @@
         <ul class="servises-list">
           <li class="servises-item">
             <h3 class="servises-item-title servises-item-title-house">Жильё</h3>
-            <p class="servises-item-desc">Рекомендуем пожить в&nbspнастоящем мотеле, всё&nbspкак&nbspв кино!</p>
+            <p class="servises-item-desc">Рекомендуем пожить в &nbsp; настоящем мотеле, всё &nbsp; как &nbsp; в кино!
+            </p>
           </li>
           <li class="servises-item servises-item-light">
             <h3 class="servises-item-title servises-item-title-burger">Еда</h3>
-            <p class="servises-item-desc">Всегда заказывайте топовый&nbspфирменный бургер, вы&nbspне&nbspразочаруетесь!
+            <p class="servises-item-desc">Всегда заказывайте топовый &nbsp; фирменный бургер, вы &nbsp; не &nbsp;
+              разочаруетесь!
             </p>
           </li>
           <li class="servises-item">
             <h3 class="servises-item-title servises-item-title-souvenirse">Сувениры</h3>
-            <p class="servises-item-desc">Не только китайского, но&nbspи&nbspнастоящего местного производства!</p>
+            <p class="servises-item-desc">Не только китайского, но &nbsp; и &nbsp; настоящего местного производства!</p>
           </li>
         </ul>
       </section>
 
       <section class="search-request" data-test="search">
         <h2 class="title search-title">Заинтересовались?</h2>
-        <p class="search-desc">Укажите предполагаемые даты поездки, <br> и&nbspмы&nbspпокажем&nbspвам&nbspлучшие
+        <p class="search-desc">Укажите предполагаемые даты поездки, <br> и &nbsp; мы &nbsp; покажем &nbsp; вам &nbsp;
+          лучшие
           предложения гостиниц в
           Седоне</p>
-        <button class="button search-link" href="catalog.html">Поиск гостиницы в Седоне</button>
+        <button class="button search-link">Поиск гостиницы в Седоне</button>
+
       </section>
 
       <section class="subscription" data-test="subscribe">
@@ -178,6 +182,51 @@
         </svg>
       </a>
     </footer>
+
+    <div class="modal-window">
+
+      <form class="modal-window-form" action="https://echo.htmlacademy.ru/" method="post">
+        <h3 class="modal-window-title">Поиск гостиницы в Седоне</h3>
+        <button class="modal-window-close" type="button"></button>
+        <label class="modal-window-label data-start" for="input-date-start">
+          Дата Заезда:
+        </label>
+        <input class="modal-window-label-input input-date-start" type="text" id="input-date-start"
+          value="27 апреля 2020">
+        <span class="modal-window-text modal-window-error">Мы не можем отправить вас в прошлое.</span>
+        <label class="modal-window-label data-end" for="input-date-end">
+          Дата Выезда:
+        </label>
+        <input class="modal-window-label-input input-date-end" type="text" id="input-date-end" value="1 сентября 2023">
+        <span class="modal-window-text ">На эти даты есть свободные номера. Пока есть.</span>
+        <label class="modal-window-label label-adult" for="adult-qty">
+          Взрослые:
+        </label>
+        <div class="qty-button-wrapper qty-button-adult">
+          <button class="qty-button button-decrement" type="button"></button>
+          <input class="modal-window-qty" type="text" id="adult-qty" value="2">
+          <button class="qty-button button-increment" type="button"></button>
+        </div>
+        <div class="child-wrapper label-child">
+          <label class="modal-window-label child-qty" for="child-qty">
+            Дети:
+          </label>
+          <span class="tooltip">
+            <button class="popaper-button-info" type="button" aria-labelledby="tooltip-info"></button>
+            <span class="tooltip-text" role="tooltip" id="tooltip-info">Укажите количество детей, которые будут с вами,
+              возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+          </span>
+        </div>
+        <div class="qty-button-wrapper qty-button-child">
+          <button class="qty-button button-decrement" type="button"></button>
+          <input class="modal-window-qty" type="text" id="child-qty" value="2">
+          <button class="qty-button button-increment" type="button"></button>
+        </div>
+        <button class="button modal-window-search" type="submit">Найти</button>
+      </form>
+
+    </div>
+
   </div>
 </body>
 
