@@ -45,7 +45,7 @@ body {
 }
 
 .button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   background-color: #756157;
   color: #ffffff;
   font-weight: 700;
@@ -520,7 +520,7 @@ body {
 }
 
 .subscription-input {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 /* Футер */
@@ -953,7 +953,7 @@ body {
   background-color: rgba(255, 255, 255, 1);
   margin-left: auto;
   padding-left: 19px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   width: 292px;
@@ -1097,7 +1097,7 @@ body {
   color: rgba(255, 255, 255, 1);
   width: 140px;
   height: 36px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1386,7 +1386,7 @@ body {
   background-image: url(../images/calendar.svg);
   background-repeat: no-repeat;
   background-position: right 22px center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1394,7 +1394,7 @@ body {
 }
 
 .modal-window-label-input::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1457,7 +1457,7 @@ body {
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-size: 18px;
   font-weight: 700;
@@ -1652,8 +1652,4 @@ body {
 .popaper-button-info:hover+.tooltip-text,
 .popaper-button-info:focus+.tooltip-text {
   display: block;
-}
-
-.as {
-  margin: 0;
 }
