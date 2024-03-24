@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="modal-window" data-test="modal">
+  <div class="modal-window modal-window-open" data-test="modal">
 
     <form class="modal-window-form" action="https://echo.htmlacademy.ru/" method="post">
       <h3 class="modal-window-title">Поиск гостиницы в Седоне</h3>
@@ -17,19 +17,19 @@
       <label class="modal-window-label data-start" for="input-date-start">
         Дата Заезда:
       </label>
-      <input class="modal-window-label-input input-date-start" type="text" id="input-date-start" value="27 апреля 2020">
+      <input class="modal-window-label-input input-date-start" type="text" id="input-date-start" placeholder="27 апреля 2020" required>
       <span class="modal-window-text modal-window-error">Мы не можем отправить вас в прошлое.</span>
       <label class="modal-window-label data-end" for="input-date-end">
         Дата Выезда:
       </label>
-      <input class="modal-window-label-input input-date-end" type="text" id="input-date-end" value="1 сентября 2023">
+      <input class="modal-window-label-input input-date-end" type="text" id="input-date-end" placeholder="1 сентября 2023" required>
       <span class="modal-window-text ">На эти даты есть свободные номера. Пока есть.</span>
       <label class="modal-window-label label-adult" for="adult-qty">
         Взрослые:
       </label>
       <div class="qty-button-wrapper qty-button-adult">
         <button class="qty-button button-decrement" type="button"></button>
-        <input class="modal-window-qty" type="text" id="adult-qty" value="2">
+        <input class="modal-window-qty" type="text" id="adult-qty" value="2" required>
         <button class="qty-button button-increment" type="button"></button>
       </div>
       <div class="child-wrapper label-child">
