@@ -90,7 +90,7 @@ body {
 .page-header {
   display: flex;
   margin: 0 70px 0 70px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-logo {
@@ -110,6 +110,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 600px;
 }
 
 .navigation-item {
@@ -128,8 +129,9 @@ body {
 
 .navigation-user {
   margin-left: auto;
-  flex-wrap: wrap;
   margin-right: 20px;
+  flex-wrap: wrap;
+  max-width: 200px;
 }
 
 .navigation-link.navigation-user {
@@ -145,7 +147,7 @@ body {
   color: #000000;
   text-decoration: none;
   text-align: center;
-  padding: 19px 16px 19px;
+  padding: 20px 16px 19px;
   display: flex;
   align-items: center;
 }
@@ -153,6 +155,7 @@ body {
 .navigation-link-user {
   padding-left: 13px;
   padding-right: 12px;
+  padding-top: 22px;
 }
 
 .navigation-link:hover,
@@ -170,7 +173,7 @@ body {
 
 .favorite-qty {
   position: absolute;
-  top: 6px;
+  top: 8px;
   left: 19px;
   background-color: #7DB54F;
   color: #ffffff;
@@ -191,6 +194,7 @@ body {
 }
 
 .button-header {
+  margin-top: 14px;
   padding: 8px 34px;
 }
 
@@ -260,7 +264,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 51px;
+  padding: 85px;
 }
 
 .advantages-item-title {
@@ -309,7 +313,7 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 85px;
 }
 
 .advantages-img {
@@ -345,6 +349,9 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   min-height: 385px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 50px;
 }
 
 .servises-item-title {
@@ -378,8 +385,6 @@ body {
 
 .servises-item-desc {
   margin: 0;
-  padding-left: 85px;
-  padding-right: 85px;
 }
 
 .search-request {
@@ -538,7 +543,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
+  max-width: 190px;
 }
 
 .footer-social-link {
@@ -704,6 +709,12 @@ body {
 .control {
   display: flex;
   align-items: center;
+}
+
+.filter-item:has(.control-input:disabled) {
+  opacity: 0.4;
+  cursor: unset;
+  pointer-events: none;
 }
 
 .control-input {
@@ -966,6 +977,8 @@ body {
   background-repeat: no-repeat;
   background-position: right 19px center;
   cursor: pointer;
+  flex-shrink: 0;
+  align-self: flex-start;
 }
 
 .catalog-select:not(:disabled):hover {
@@ -985,6 +998,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  max-width: 220px;
 }
 
 .card-grid-toggle {
