@@ -439,7 +439,7 @@ body {
 
 .subscription {
   background-image: url(../images/background-subscribe-sq.jpg);
-  background-color: rgba(130, 179, 211, 0.5);
+  background-color: rgba(130, 179, 211, 0.8);
   background-size: cover;
   color: rgba(255, 255, 255, 1);
   font-size: 22px;
@@ -1012,11 +1012,25 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   fill: #000000;
+  color:#000000;
+  text-decoration: none;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .button-border {
   border: 2px solid #000000;
+}
+
+.card-grid-toggle-disabled,
+.card-grid-toggle-disabled:hover,
+.card-grid-toggle-disabled:focus,
+.card-grid-toggle-disabled:active {
+  cursor: unset;
+  color: #ffffff;
+  pointer-events: none;
+  fill: #e5e5e5;
+  border: 2px solid rgba(229, 229, 229, 0.3);
 }
 
 .card-grid-toggle:hover,
@@ -1282,7 +1296,6 @@ body {
 
 .modal-window-form {
   width: 717px;
-  min-height: 576px;
   background-color: #ffffff;
   box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
   border-radius: 28px;
@@ -1294,10 +1307,10 @@ body {
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 136px 198px 131px 110px;
-  grid-template-rows: 100px 48px 48px 48px 48px 48px 108px;
 }
 
 .modal-window-title {
+  margin: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1307,6 +1320,8 @@ body {
   grid-column: 1 / 5;
   max-width: 500px;
   text-transform: uppercase;
+  margin-bottom: 64px;
+  align-self: flex-start;
 }
 
 .modal-window-close {
@@ -1407,15 +1422,9 @@ body {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+  margin-bottom: 4px;
 }
 
-.modal-window-label-input::placeholder {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-}
 
 .modal-window-label-input:hover,
 .modal-window-label-input:focus {
@@ -1429,8 +1438,9 @@ body {
   color: #333333;
   grid-row: 5 / 6;
   grid-column: 2 / -1;
-  padding-top: 4px;
   padding-left: 21px;
+  padding-right: 21px;
+  margin-bottom: 23px;
 }
 
 .modal-window-error {
@@ -1611,7 +1621,7 @@ body {
   border: none;
   background-color: #82B3D3;
   padding: 18px 100px;
-  grid-row: -1 / -2;
+  grid-row: 7 / 8;
   grid-column: 1 / -1;
   align-self: flex-end;
   border-radius: 10px;
@@ -1619,6 +1629,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  margin-top: 48px;
 
 }
 
